@@ -3,7 +3,7 @@ class QuizList extends React.Component {
     return (
       <ul className="quiz-list">
         {this.props.quizzes.map((quiz)=> {
-          return <QuizItem quiz={quiz} />
+          return <QuizItem key={quiz.cid} quiz={quiz} />
         })}
       </ul>
       )

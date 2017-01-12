@@ -5,9 +5,11 @@
 
 .quiz-list {
   li {
-    cursor: pointer;
-    padding: 10px;
     margin-bottom: 10px;
     border: 1px gray solid;
+  }
+  li > a {
+    display: block;
+    padding: 10px;
   }
 }

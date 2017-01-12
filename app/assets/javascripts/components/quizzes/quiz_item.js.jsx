@@ -2,7 +2,7 @@ class QuizItem extends React.Component {
   render() {
     let quiz = this.props.quiz;
     return (
-      <li>{quiz.get('name')}</li>
+      <li><a href={quiz.get('url')}>{quiz.get('name')}</a></li>
       )
   }
 }

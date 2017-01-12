@@ -1,11 +1,8 @@
 class QuizScreen extends React.Component {
   render() {
-    let quizzes = this.props.collection;
+    let quiz = this.props.model;
     return (
-      <div>
-        <h1>Quizzes</h1>
-        <QuizList quizzes={quizzes}/>
-      </div>
+      <h1>{quiz.get('name')}</h1>
       )
   }
 }
