@@ -5,7 +5,7 @@ class QuizScreen extends React.Component {
     return (
       <div>
         <h1>{quiz.get('name')}</h1>
-        <QuestionList questions={questions} />
+        <ListView collection={questions} />
       </div>
       )
   }
