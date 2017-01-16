@@ -1,0 +1,1 @@
+class QuizMaster.Models.Question extends Backbone.Model
