@@ -3,13 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .question-list {
+  margin: 0;
   li {
     padding: 10px;
     border: 1px gray solid;
     margin-bottom: 10px;
   }
+}
 
-  .question-text {
-    margin-bottom: 10px;
-  }
+.question-form {
+  padding: 10px;
+  padding-top: 20px;
+  border: 1px gray solid;
+  margin-bottom: 40px;
 }

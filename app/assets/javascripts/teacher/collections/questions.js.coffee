@@ -1,3 +1,3 @@
 class QuizMaster.Collections.Questions extends Backbone.Collection
-  url: '/questions'
+  url: '/teacher/questions'
   model: QuizMaster.Models.Question

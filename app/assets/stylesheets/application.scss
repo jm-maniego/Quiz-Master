@@ -15,8 +15,9 @@
  */
 
 #main {
-  width: 700px;
+  width: 620px;
   margin: 0 auto;
+  padding: 40px;
 }
 
 ul {
@@ -32,4 +33,37 @@ ul {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+input {
+  padding: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px gray solid;
+}
+
+input.form-control {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.deletable {
+  position: relative;
+
+  button.close {
+    color: red;
+    font-size: 1rem;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+  }
+}
+
+button, input[type='submit'] {
+  cursor: pointer;
 }
