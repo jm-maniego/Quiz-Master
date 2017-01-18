@@ -4,7 +4,7 @@
 
 .question-list {
   margin: 0;
-  li {
+  > li {
     padding: 10px;
     border: 1px gray solid;
     margin-bottom: 10px;

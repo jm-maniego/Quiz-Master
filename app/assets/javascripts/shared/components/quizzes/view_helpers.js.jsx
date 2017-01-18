@@ -18,3 +18,21 @@ class ListItem extends React.Component {
       )
   }
 }
+
+class ItemActionList extends React.Component {
+  render() {
+    return (
+      <ul className='action-list'>
+        {this.props.children}
+      </ul>
+      )
+  }
+}
+
+class ActionListItem extends React.Component {
+  render() {
+    return (
+      <li className='action-list-item'>{this.props.children}</li>
+      )
+  }
+}

@@ -35,14 +35,20 @@ ul {
   box-sizing: border-box;
 }
 
-input {
+input, .form-actions button {
   padding: 10px;
-  outline: none;
   font-size: 1rem;
+}
+
+.form-actions {
+  button, input[type='submit'] {
+    margin-right: 10px;
+  }
 }
 
 input[type="text"] {
   border: none;
+  outline: none;
   border-radius: 0;
   border-bottom: 1px gray solid;
 }
@@ -52,15 +58,30 @@ input.form-control {
   margin-bottom: 10px;
 }
 
-.deletable {
+.list-item {
   position: relative;
 
-  button.close {
-    color: red;
-    font-size: 1rem;
+  .action-list {
+    display: inline;
     top: 10px;
     right: 10px;
     position: absolute;
+  }
+
+  .action-list-item {
+    display: inline;
+    margin-left: 10px;
+    float: right;
+
+    button {
+      height: 20px;
+      width: 20px;
+      padding: 0;
+      text-align: center;
+    }
+    i {
+      font-size: 10px;
+    }
   }
 }
 
