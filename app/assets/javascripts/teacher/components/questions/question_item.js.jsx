@@ -119,9 +119,9 @@ class QuestionItemShow extends React.Component {
     let question = this.props.question;
     return (
       <div>
-        <div>{question.get('text')}</div>
+        <div><strong>Q: </strong>{question.get('text')}</div>
         <p>
-          <strong>Answer: </strong>{question.get('correct_answer')}
+          <strong>A: </strong>{question.get('correct_answer')}
         </p>
       </div>
       )

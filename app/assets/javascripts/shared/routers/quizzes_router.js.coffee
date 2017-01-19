@@ -1,6 +1,7 @@
 class QuizMaster.Routers.Quizzes extends Backbone.Router
   routes:
     '': 'index'
+    'quizzes': 'index'
     'quizzes/:id': 'show'
     'teacher/quizzes': 'index'
     'teacher/quizzes/:id': 'show'

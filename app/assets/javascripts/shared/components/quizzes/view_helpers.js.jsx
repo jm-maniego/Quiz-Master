@@ -1,8 +1,9 @@
 class ListView extends React.Component {
   render() {
+    let {collection, ...props} = this.props
     return (
-      <ul {...this.props}>
-        {this.props.collection.map((item)=> {
+      <ul {...props}>
+        {collection.map((item)=> {
           return <ListItem key={item.cid} item={item}/>
         })}
       </ul>
