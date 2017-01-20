@@ -8,6 +8,9 @@ class Question < ApplicationRecord
   accepts_nested_attributes_for :answer
 
   def check_answer
-    correct_answer == answer.text
+    answer = self.answer.text.downcase
+    correct_answer = self.correct_answer.downcase
+    [answer, answer.to_i.to_words].include?(correct_answer) ||
+      [correct_answer, correct_answer.to_i.to_words].include?(answer)
   end
 end
