@@ -13,4 +13,5 @@ No CRUD Quiz
 
 # Routes
 /teacher/quizzes - CRUD questions
+
 /quizzes/ - Quiz Mode
