@@ -95,7 +95,7 @@ class QuizResult extends React.Component {
     let questions = new QuizMaster.Collections.Questions(quiz.get('questions'));
     return(
       <div>
-        <ul>
+        <ul className="question-list">
         {questions.map((question)=> {
           return <QuestionResult key={question.cid} question={question}/>
         })}
@@ -109,11 +109,12 @@ class QuestionResult extends React.Component {
   render() {
     let question = this.props.question;
     let text = {
-      true: "CORRECT",
-      false: "INCORRECT"
+      true: "correct",
+      false: "incorrect"
     }[question.get('correct')]
+
     return (
-      <li>
+      <li className={text}>
         <strong>{question.get('text')} </strong>
         <span>{text}</span>
       </li>

@@ -17,3 +17,13 @@
   border: 1px gray solid;
   margin-bottom: 40px;
 }
+
+.correct {
+  color: green;
+  border-color: green !important;
+}
+
+.incorrect {
+  color: red;
+  border-color: red !important;
+}
