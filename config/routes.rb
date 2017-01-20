@@ -6,7 +6,15 @@ Rails.application.routes.draw do
     resources :questions
   end
 
-  resources :quizzes
-  resources :questions
+  resources :quizzes do
+    member do
+      get :check_answers
+    end
+  end
+  resources :questions do
+    member do
+      post :answer
+    end
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
