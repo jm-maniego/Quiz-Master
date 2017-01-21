@@ -1,24 +1,17 @@
-# README
+# Rails 5 + Backbone + React
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+No test cases
 
-Things you may want to cover:
+No markdown
 
-* Ruby version
+No user roles
 
-* System dependencies
+No CRUD Quiz
 
-* Configuration
+# Setup
+`rake db:seed`
 
-* Database creation
+# Routes
+/teacher/quizzes - CRUD questions
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+/quizzes/ - Quiz Mode
